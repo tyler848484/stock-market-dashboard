@@ -9,12 +9,12 @@ const SearchBar = ({ onSearch, disabledSearch }) => {
     setSymbol(symbol.trim().toUpperCase());
     e.preventDefault();
     if (symbol.length > 0 && symbol.length <= 5) {
-      onSearch(symbol);  // Only submit if the input is valid
+      onSearch(symbol);
     }
     setSymbol('');
   };
 
-  const isDisabled = disabledSearch || symbol.length === 0 || symbol.length > 5;  // Disable conditions
+  const isDisabled = disabledSearch || symbol.length === 0 || symbol.length > 5; 
 
   return (
     <form onSubmit={handleSubmit}>

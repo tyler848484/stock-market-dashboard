@@ -1,5 +1,6 @@
-Set your env variable ALPHA_VANTAGE_API_KEY to your api key.
-You can get one at https://www.alphavantage.co/support/#api-key
+### `Setup`
+1. Set your env variable ALPHA_VANTAGE_API_KEY to your api key.  You can get one at https://www.alphavantage.co/support/#api-key
+2. Install npm with `npm install`.
 
 ### `npm start`
 
