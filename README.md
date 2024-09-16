@@ -1,3 +1,5 @@
+![alt text](https://github.com/tyler848484/stock-market-dashboard/blob/72b60762cae5937d1393c9294b74270c088605b3/StockMarketDashboard.png)
+
 ### `Setup`
 1. Set your env variable ALPHA_VANTAGE_API_KEY to your api key.  You can get one at https://www.alphavantage.co/support/#api-key
 2. Install npm with `npm install`.
