@@ -81,15 +81,14 @@ function App() {
       <main>
         <h1 className='App'>Stock Market Dashboard</h1>
         <SearchBar onSearch={fetchStockData} disableSearch={stockLimitReached}/>
-        
-        {stocks.length > 0 ? stocks.map((stock, index) => (
-          <div className='stock-container'>
-            <div key={index} className="stock-tile" style={{ color: stock.color }}>
-              <h3>{stock.name} ({stock.symbol})</h3>
-              <p>Price: ${stock.price}</p>
-            </div>
-          </div> 
-        )) : <h3>Add a stock to learn more about it!</h3> }
+        <div className='stock-container'>
+          {stocks.length > 0 ? stocks.map((stock, index) => (
+              <div key={index} className="stock-tile" style={{ color: stock.color }}>
+                <h3>{stock.name} ({stock.symbol})</h3>
+                <p>Price: ${stock.price}</p>
+              </div>
+          )) : <h3>Add a stock to learn more about it!</h3> }
+        </div> 
 
         {stockLimitReached && toast.warn("Stock ticker limit reached.")}
 

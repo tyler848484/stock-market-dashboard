@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  padding: 10px;
   color: blue;
 }
 
@@ -17,43 +16,6 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-}
-
-.toggle-switch {
-  position: absolute;
-  top: 20px;
-  right: 20px; 
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  border-radius: 34px;
-  transition: background-color 0.3s ease;
-}
-
-.switch::after {
-  content: "";
-  position: absolute;
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
 }
 
 nav {
@@ -116,13 +78,16 @@ button {
 
 .stock-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  direction: ltr;
+  flex-direction: row;
   gap: 10px;
+  width: 100%;
 }
 
 .stock-tile {
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 20px;
   width: 150px;
   background-color: #f9f9f9;
 }
